@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1411;
+  font-family: "Georgia", serif;
+}
+
+.app {
+  width: 1200px;
+  height: 680px;
+  margin: 40px auto;
+  background: linear-gradient(180deg, #1b221d, #141a16);
+  border-radius: 10px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  height: 64px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  gap: 40px;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.nav a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a.active {
+  color: #ff9b63;
+}
+
+.search {
+  margin-left: 24px;
+  color: #fff;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  height: calc(100% - 64px);
+}
+
+.content {
+  padding: 64px 48px;
+  color: #fff;
+}
+
+.tag {
+  letter-spacing: 2px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.content h1 {
+  font-size: 72px;
+  margin: 16px 0;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 32px;
+}
+
+.content button {
+  background: #ff9b63;
+  border: none;
+  color: #1a1a1a;
+  padding: 12px 32px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dots {
+  margin-top: 48px;
+  display: flex;
+  gap: 10px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.scene {
+  position: relative;
+  padding: 40px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.label span {
+  width: 28px;
+  height: 28px;
+  background: #ff9b63;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.label.chair {
+  top: 120px;
+  right: 140px;
+}
+
+.label.table {
+  top: 260px;
+  right: 260px;
+}
+
+.card {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.card-image {
+  width: 72px;
+  height: 72px;
+  background: #9bb3a5;
+  border-radius: 8px;
+}
+
+.card-text h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.4;
+}

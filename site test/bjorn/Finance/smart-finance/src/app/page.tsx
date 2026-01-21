@@ -1,0 +1,14 @@
+import { Header } from "@/components/Header"
+import { Hero } from "@/components/Hero"
+import { Features } from '@/components/Features';
+import { TrustedBrands } from "@/components/TrustedBrands"
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <TrustedBrands />
+      <Features />
+    </>
+  )
+}

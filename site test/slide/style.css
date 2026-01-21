@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f6e7e6;
+}
+
+.page {
+  width: 1200px;
+  height: 520px;
+  margin: 60px auto;
+  background: #ffffff;
+  display: flex;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar {
+  width: 160px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.find {
+  font-size: 12px;
+  color: #666;
+}
+
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-section {
+  background: #e88f86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room {
+  width: 80%;
+  height: 80%;
+  background: #e4938b;
+  position: relative;
+}
+
+.shelf {
+  position: absolute;
+  width: 60%;
+  height: 90px;
+  background: #d55c56;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.shelf.top {
+  top: 20px;
+}
+
+.shelf.middle {
+  top: 130px;
+  background: #eaa19b;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: #f3f3f3;
+}
+
+.box.small {
+  width: 30px;
+  height: 30px;
+}
+
+.bench {
+  position: absolute;
+  bottom: 40px;
+  left: 25%;
+  width: 50%;
+  height: 40px;
+  background: #c47b75;
+}
+
+.table {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+  width: 60px;
+  height: 40px;
+  background: #e6d7c9;
+  border-radius: 50%;
+}
+
+.lamp {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  width: 2px;
+  height: 160px;
+  background: #000;
+}
+
+.text-section {
+  padding: 60px 70px;
+  position: relative;
+}
+
+.header-text .subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.header-text h1 {
+  font-size: 56px;
+  margin: 10px 0;
+}
+
+.header-text p {
+  font-size: 14px;
+  color: #666;
+  max-width: 300px;
+}
+
+.search {
+  display: flex;
+  margin: 30px 0;
+}
+
+.search input {
+  width: 220px;
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+}
+
+.search button {
+  padding: 10px 16px;
+  border: none;
+  background: #d8a39d;
+  cursor: pointer;
+}
+
+.video {
+  width: 120px;
+  height: 80px;
+  background: #eee;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 12px;
+  color: #777;
+  max-width: 260px;
+}
+
+.vertical-menu {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  writing-mode: vertical-rl;
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  color: #777;
+}
